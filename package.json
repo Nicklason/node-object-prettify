@@ -1,0 +1,42 @@
+{
+  "name": "object-prettify",
+  "version": "1.0.0",
+  "description": "Sort properties in an object using a template",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
+    "report": "npm test && istanbul report",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicklason/node-object-prettify.git"
+  },
+  "keywords": [
+    "object",
+    "sort",
+    "template"
+  ],
+  "author": {
+    "name": "Nicklas Marc Pedersen",
+    "url": "https://nicklas.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nicklason/node-object-prettify/issues"
+  },
+  "homepage": "https://github.com/Nicklason/node-object-prettify#readme",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.11.1",
+    "eslint-config-google": "^0.11.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}
